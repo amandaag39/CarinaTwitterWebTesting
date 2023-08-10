@@ -4,6 +4,7 @@ import com.zebrunner.carina.utils.factory.DeviceType;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.decorator.PageOpeningStrategy;
 import org.example.gui.pages.common.HomePageBase;
+import org.example.gui.pages.common.ProfilePageBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
@@ -27,8 +28,9 @@ public class HomePage extends HomePageBase {
     @FindBy(xpath = "//span[text()='@PanPandaHeart']")
     private ExtendedWebElement userTweetHandle;
 
-    @FindBy(css = "article[data-testid='tweet'] div[data-testid='caret']")
-    private ExtendedWebElement tweetMoreOptionButton;
+    @FindBy(css = "a[aria-label='Profile']")
+    private ExtendedWebElement navigateToProfilePageButton;
+
 
 
     public HomePage(WebDriver driver) {
@@ -50,5 +52,10 @@ public class HomePage extends HomePageBase {
     @Override
     public boolean isTweetVisible() {
         return userTweetHandle.isPresent();
+    }
+
+    public HomePageBase navigateToProfilePage() {
+        navigateToProfilePageButton.click();
+        return null;
     }
 }

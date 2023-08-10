@@ -1,0 +1,14 @@
+[2023-08-10 08:53:06] [1] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-10 08:53:06] [1] [INFO] TEST [TwitterWebTest - deleteTweetTest] STARTED at [15:53:06 2023-08-10]
+[2023-08-10 08:53:06] [1] [INFO] Starting driver session...
+[2023-08-10 08:53:12] [1] [INFO] Driver session started.
+[2023-08-10 08:53:12] [1] [INFO] INFO: opening url 'https://twitter.com/i/flow/login'
+[2023-08-10 08:53:19] [1] [INFO] PASS: keys 'PanPandaHeart' are sent to element 'usernameField'.
+[2023-08-10 08:53:20] [1] [INFO] PASS: element 'nextButton' is clicked.
+[2023-08-10 08:53:21] [1] [INFO] PASS: keys 'PassyMcPassword123#' are sent to element 'passwordField'.
+[2023-08-10 08:53:21] [1] [INFO] PASS: element 'loginButton' is clicked.
+[2023-08-10 08:53:27] [1] [INFO] Element clicked
+[2023-08-10 08:53:29] [1] [INFO] PASS: keys ' Hello, World!' are sent to element 'tweetTextField'.
+[2023-08-10 08:53:30] [1] [INFO] PASS: element 'tweetButton' is clicked.
+[2023-08-10 08:53:31] [1] [INFO] PASS: element 'navigateToProfilePageButton' is clicked.
+[2023-08-10 08:53:32] [1] [INFO] TEST [TwitterWebTest - deleteTweetTest] PASSED at [15:53:32 2023-08-10]

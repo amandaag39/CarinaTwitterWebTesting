@@ -13,4 +13,6 @@ public abstract class HomePageBase extends AbstractPage {
 
     public abstract boolean isTweetVisible();
 
+    public abstract HomePageBase navigateToProfilePage();
+
 }

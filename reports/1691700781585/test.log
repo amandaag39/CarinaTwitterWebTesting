@@ -1,0 +1,25 @@
+[2023-08-10 08:53:01] [1] [INFO] 
+============= Basic configuration =============
+env=DEMO
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://twitter.com
+selenium_url=http://localhost:4444/wd/hub
+auto_screenshot=true
+explicit_timeout=60
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+browserName=chrome
+===============================================
+
+[2023-08-10 08:53:01] [1] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-10 08:53:06] [1] [INFO] [TestNG] Running:
+  C:\Users\Owner\AppData\Local\JetBrains\IdeaIC2022.3\temp-testng-customsuite.xml
+
+[2023-08-10 08:53:06] [1] [INFO] Set thread-count=1
+[2023-08-10 08:53:06] [1] [INFO] Set data-provider-thread-count=1
+[2023-08-10 08:53:06] [1] [INFO] CARINA_CORE_VERSION: 1.1.3
+[2023-08-10 08:53:33] [1] [INFO] INFO: '**************** Test execution summary ****************'.
+[2023-08-10 08:53:33] [1] [INFO] RESULT #1: TEST [TwitterWebTest - deleteTweetTest] PASS [screenshots=file://C:\Users\Owner\OneDrive\Documents\GitHub\TwitterWebTest\.\reports\1691700781585/9c4d22ed-6b5e-4af9-986b-6a3952b11127/report.html | log=file://C:\Users\Owner\OneDrive\Documents\GitHub\TwitterWebTest\.\reports\1691700781585/9c4d22ed-6b5e-4af9-986b-6a3952b11127/test.log]
