@@ -1,0 +1,44 @@
+[2023-08-08 06:00:48] [1] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-08 06:00:48] [1] [INFO] TEST [TwitterWebTest - testPostTweet] STARTED at [13:00:48 2023-08-08]
+[2023-08-08 06:00:48] [1] [INFO] Starting driver session...
+[2023-08-08 06:00:53] [1] [INFO] Driver session started.
+[2023-08-08 06:00:53] [1] [INFO] INFO: opening url 'https://twitter.com/i/flow/login'
+[2023-08-08 06:01:00] [1] [INFO] PASS: keys 'PanPandaHeart' are sent to element 'usernameField'.
+[2023-08-08 06:01:00] [1] [INFO] PASS: element 'nextButton' is clicked.
+[2023-08-08 06:01:01] [1] [INFO] PASS: keys 'Pwnage4625196!' are sent to element 'passwordField'.
+[2023-08-08 06:01:02] [1] [INFO] PASS: element 'loginButton' is clicked.
+[2023-08-08 06:01:14] [1] [ERROR] TEST [TwitterWebTest - testPostTweet] FAILED at [13:01:14 2023-08-08] - Expected condition failed: waiting for element found by By.cssSelector: div.public-DraftStyleDefault-block to be selected (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: net.bytebuddy.renamed.java.lang.Object$ByteBuddy$R2WgekWh
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.16 (7e1ff058633f..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60789}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.0.0.252:4444/sessio..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3ddc2123967781cd6d65e7c2fcc98689
+
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+regression.WebTests.testPostTweet(WebTests.java:54)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:577)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+org.testng.SuiteRunner.run(SuiteRunner.java:330)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+org.testng.TestNG.runSuites(TestNG.java:1099)
+org.testng.TestNG.run(TestNG.java:1067)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)

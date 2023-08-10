@@ -1,0 +1,10 @@
+[2023-08-08 08:35:19] [1] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-08 08:35:19] [1] [INFO] TEST [TwitterWebTest - testPostTweet] STARTED at [15:35:19 2023-08-08]
+[2023-08-08 08:35:19] [1] [INFO] Starting driver session...
+[2023-08-08 08:35:29] [1] [INFO] Driver session started.
+[2023-08-08 08:35:29] [1] [INFO] INFO: opening url 'https://twitter.com/i/flow/login'
+[2023-08-08 08:35:35] [1] [INFO] PASS: keys 'PanPandaHeart' are sent to element 'usernameField'.
+[2023-08-08 08:35:36] [1] [INFO] PASS: element 'nextButton' is clicked.
+[2023-08-08 08:35:37] [1] [INFO] PASS: keys 'Pwnage4625196!' are sent to element 'passwordField'.
+[2023-08-08 08:35:37] [1] [INFO] PASS: element 'loginButton' is clicked.
+[2023-08-08 08:35:41] [1] [INFO] TEST [TwitterWebTest - testPostTweet] PASSED at [15:35:41 2023-08-08]
