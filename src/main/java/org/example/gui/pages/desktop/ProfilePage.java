@@ -29,12 +29,11 @@ public class ProfilePage extends ProfilePageBase {
     }
 
     @Override
-    public ProfilePageBase deleteTweet() {
+    public void deleteTweet() {
         tweetMoreOptionButton.click();
         dropdownDeleteTweetButton.click();
         dialogueBoxDeleteButton.click();
         // add code to validate deletion
-        return initPage(driver, ProfilePageBase.class);
     }
 
 

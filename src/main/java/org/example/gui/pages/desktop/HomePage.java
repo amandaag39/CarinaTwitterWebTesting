@@ -40,13 +40,11 @@ public class HomePage extends HomePageBase {
     }
 
     @Override
-    public HomePageBase postTweet(String tweetText) {
+    public void postTweet(String tweetText) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.public-DraftStyleDefault-block"))).click();
         tweetTextField.type(tweetText);
         tweetButton.click();
-        // Maybe write more logic to check if the tweet has been posted?
-        return initPage(driver, HomePageBase.class);
     }
 
     @Override
@@ -54,8 +52,8 @@ public class HomePage extends HomePageBase {
         return userTweetHandle.isPresent();
     }
 
-    public HomePageBase navigateToProfilePage() {
+    public ProfilePageBase navigateToProfilePage() {
         navigateToProfilePageButton.click();
-        return null;
+        return initPage(getDriver(), ProfilePageBase.class);
     }
 }

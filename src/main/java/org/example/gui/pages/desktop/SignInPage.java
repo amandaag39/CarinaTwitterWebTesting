@@ -1,5 +1,6 @@
 package org.example.gui.pages.desktop;
 
+import com.zebrunner.carina.utils.R;
 import com.zebrunner.carina.utils.factory.DeviceType;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.decorator.PageOpeningStrategy;
@@ -31,18 +32,12 @@ public class SignInPage extends SignInPageBase {
     }
 
     @Override
-    public HomePageBase signIn(String username, String password) {
-        usernameField.type(username);
+    public HomePageBase signIn() {
+        usernameField.click();
+        usernameField.type(R.TESTDATA.get("user.email"));
         nextButton.click();
-        passwordField.type(password);
+        passwordField.type(R.TESTDATA.get("password"));
         loginButton.click();
-
-        try {
-            Thread.sleep(1000); // 1 second delay
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
         return initPage(driver, HomePageBase.class);
     }
 }

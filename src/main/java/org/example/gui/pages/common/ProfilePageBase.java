@@ -9,5 +9,5 @@ public abstract class ProfilePageBase extends AbstractPage {
         super(driver);
     }
 
-    public abstract ProfilePageBase deleteTweet();
+    public abstract void deleteTweet();
 }

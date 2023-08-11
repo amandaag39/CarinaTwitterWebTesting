@@ -9,5 +9,5 @@ public abstract class SignInPageBase extends AbstractPage {
         super(driver);
     }
 
-    public abstract HomePageBase signIn(String username, String password);
+    public abstract HomePageBase signIn();
 }

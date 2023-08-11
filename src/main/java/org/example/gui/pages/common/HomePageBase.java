@@ -9,10 +9,10 @@ public abstract class HomePageBase extends AbstractPage {
         super(driver);
     }
 
-    public abstract HomePageBase postTweet(String tweetText);
+    public abstract void postTweet(String tweetText);
 
     public abstract boolean isTweetVisible();
 
-    public abstract HomePageBase navigateToProfilePage();
+    public abstract ProfilePageBase navigateToProfilePage();
 
 }
