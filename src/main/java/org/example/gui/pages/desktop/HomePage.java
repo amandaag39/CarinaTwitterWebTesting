@@ -5,6 +5,8 @@ import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.decorator.PageOpeningStrategy;
 import org.example.gui.pages.common.HomePageBase;
 import org.example.gui.pages.common.ProfilePageBase;
+import org.example.gui.pages.components.SideBanner;
+import org.example.gui.pages.components.SideBannerBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
@@ -15,6 +17,9 @@ import java.time.Duration;
 
 @DeviceType(pageType = DeviceType.Type.DESKTOP, parentClass = HomePageBase.class)
 public class HomePage extends HomePageBase {
+
+    @FindBy(xpath = "//header[@role='banner']")
+    private SideBanner sideBanner;
 
     @FindBy(css = "a[aria-label='Twitter']")
     private ExtendedWebElement homePageLogo;
@@ -37,6 +42,16 @@ public class HomePage extends HomePageBase {
         super(driver);
         this.setPageURL("/home");
         setPageOpeningStrategy(PageOpeningStrategy.BY_URL);
+    }
+
+    @Override
+    public SideBanner getSideBannerMenu() {
+        return sideBanner;
+    }
+
+    @Override
+    public ProfilePageBase openProfilePage() {
+        return getSideBannerMenu().openProfilePage();
     }
 
     @Override

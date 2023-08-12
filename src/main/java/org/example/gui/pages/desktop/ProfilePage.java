@@ -21,6 +21,9 @@ public class ProfilePage extends ProfilePageBase {
     @FindBy(css = "div[data-testid='confirmationSheetDialog'] > div:nth-child(3) > div:first-child > div:first-child")
     private ExtendedWebElement dialogueBoxDeleteButton;
 
+    @FindBy(xpath = "//span[text()='Your Tweet was deleted']")
+    private ExtendedWebElement popUpTweetDeletedConfirmation;
+
 
     public ProfilePage(WebDriver driver) {
         super(driver);
@@ -33,8 +36,10 @@ public class ProfilePage extends ProfilePageBase {
         tweetMoreOptionButton.click();
         dropdownDeleteTweetButton.click();
         dialogueBoxDeleteButton.click();
-        // add code to validate deletion
     }
 
+    public boolean confirmTweetDeleted() {
+        return popUpTweetDeletedConfirmation.isPresent();
+    }
 
 }
